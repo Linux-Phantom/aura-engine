@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aura.core.fallback.AuraFallbackRouterTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-12T12:46:09" hostname="codespaces-863275" time="0.01">
+  <properties/>
+  <testcase name="switches to local fallback when remote call throws[jvm]" classname="com.aura.core.fallback.AuraFallbackRouterTest" time="0.005"/>
+  <testcase name="routes to cloud when network is available[jvm]" classname="com.aura.core.fallback.AuraFallbackRouterTest" time="0.002"/>
+  <testcase name="switches to local fallback when network is unavailable[jvm]" classname="com.aura.core.fallback.AuraFallbackRouterTest" time="0.001"/>
+  <system-out><![CDATA[[AuraFallbackRouter] remote call failed: network down
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aura.core.daemon.AuraDaemonTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-11-02T09:44:47" hostname="codespaces-863275" time="0.176">
+  <properties/>
+  <testcase name="serves a JSON prompt over a Unix domain socket[jvm]" classname="com.aura.core.daemon.AuraDaemonTest" time="0.166"/>
+  <testcase name="uses local fallback when cloud credentials are not configured[jvm]" classname="com.aura.core.daemon.AuraDaemonTest" time="0.005"/>
+  <testcase name="processes prompt through privacy compression classification and cloud routing[jvm]" classname="com.aura.core.daemon.AuraDaemonTest" time="0.004"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+]]></system-err>
+</testsuite>

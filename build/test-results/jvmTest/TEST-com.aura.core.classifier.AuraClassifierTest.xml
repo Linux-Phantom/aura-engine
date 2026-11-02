@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aura.core.classifier.AuraClassifierTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-11-02T09:44:47" hostname="codespaces-863275" time="0.092">
+  <properties/>
+  <testcase name="classifies code-oriented requests as heavy and code[jvm]" classname="com.aura.core.classifier.AuraClassifierTest" time="0.069"/>
+  <testcase name="classifies long prompts as heavy general chat[jvm]" classname="com.aura.core.classifier.AuraClassifierTest" time="0.017"/>
+  <testcase name="classifies simple general chat requests as light[jvm]" classname="com.aura.core.classifier.AuraClassifierTest" time="0.006"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

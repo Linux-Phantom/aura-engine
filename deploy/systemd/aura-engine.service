@@ -1,0 +1,42 @@
+[Unit]
+Description=AURA Engine AI Middleware Daemon
+After=network.target
+
+[Service]
+Type=simple
+User=aura
+Group=aura-clients
+RuntimeDirectory=aura-engine
+RuntimeDirectoryMode=0770
+UMask=0007
+Environment=AURA_SOCKET_PATH=/run/aura-engine/aura-engine.sock
+EnvironmentFile=-/etc/aura-engine/aura-engine.env
+WorkingDirectory=/usr/lib/aura-engine
+ExecStart=/usr/bin/java -jar /usr/lib/aura-engine/aura-engine-all.jar
+Restart=on-failure
+RestartSec=3s
+TimeoutStopSec=15s
+KillSignal=SIGTERM
+
+NoNewPrivileges=true
+PrivateTmp=true
+PrivateDevices=true
+ProtectSystem=strict
+ProtectHome=true
+ProtectKernelTunables=true
+ProtectKernelModules=true
+ProtectControlGroups=true
+ProtectHostname=true
+ProtectClock=true
+RestrictSUIDSGID=true
+RestrictNamespaces=true
+LockPersonality=true
+ProtectProc=invisible
+ProcSubset=pid
+CapabilityBoundingSet=
+AmbientCapabilities=
+RestrictAddressFamilies=AF_UNIX AF_INET AF_INET6
+SystemCallArchitectures=native
+
+[Install]
+WantedBy=multi-user.target
